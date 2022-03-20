@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RXExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wvw-JX-whU">
+                                <rect key="frame" x="171.5" y="432.5" width="71" height="31"/>
+                                <color key="backgroundColor" red="0.91161257028579712" green="0.94353371858596802" blue="0.802653968334198" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Tap me"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="shV-qo-Da6">
+                                <rect key="frame" x="176" y="529" width="62" height="21"/>
+                                <color key="backgroundColor" red="0.91161257028579712" green="0.94353371858596802" blue="0.802653968334198" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wg7-XL-glf">
+                                <rect key="frame" x="171" y="246" width="72" height="21"/>
+                                <color key="backgroundColor" red="0.81847697496414185" green="0.91080325841903687" blue="0.27748945355415344" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Wvw-JX-whU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1sn-sU-m3E"/>
+                            <constraint firstItem="Wvw-JX-whU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="StD-8N-n9b"/>
+                            <constraint firstItem="shV-qo-Da6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aA8-nT-k0s"/>
+                            <constraint firstItem="Wg7-XL-glf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b0v-Px-srG"/>
+                            <constraint firstItem="Wg7-XL-glf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="202" id="o3v-Ow-GFE"/>
+                            <constraint firstItem="shV-qo-Da6" firstAttribute="top" secondItem="Wvw-JX-whU" secondAttribute="bottom" constant="65.5" id="ui0-ZF-sVv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="numberLabel" destination="shV-qo-Da6" id="alt-7f-2fr"/>
+                        <outlet property="numberLabel2" destination="Wg7-XL-glf" id="yi3-iz-1I3"/>
+                        <outlet property="tapButton" destination="Wvw-JX-whU" id="c3a-8f-UrN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="82"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
